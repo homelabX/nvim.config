@@ -3,9 +3,9 @@ local conform = require("conform")
 
 -- Formatter Setup
 conform.setup({
-    formatters_by_ft = {
-      lua = { "stylua" },
-    },
+  formatters_by_ft = {
+    lua = { "stylua" },
+  },
 })
 
 -- LSP Server Setup
