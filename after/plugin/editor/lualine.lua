@@ -1,9 +1,9 @@
-local lualine = require('lualine')
+local lualine = require("lualine")
 
-lualine.setup {
-	options = {
-		theme = 'catppuccin',
-		component_separators = "",
-		section_separators = ""
-	}
-}
+lualine.setup({
+  options = {
+    theme = "catppuccin",
+    component_separators = "",
+    section_separators = "",
+  },
+})

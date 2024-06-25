@@ -1,5 +1,5 @@
 return {
-    "nvim-treesitter/nvim-treesitter",
-    name = "treesitter",
-    build = ":TSUpdate"
+  "nvim-treesitter/nvim-treesitter",
+  name = "treesitter",
+  build = ":TSUpdate",
 }
