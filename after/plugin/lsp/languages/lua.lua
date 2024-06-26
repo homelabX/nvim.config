@@ -9,4 +9,8 @@ conform.setup({
 })
 
 -- LSP Server Setup
-lspconfig.lua_ls.setup({})
+lspconfig.lua_ls.setup({
+  hint = {
+    enable = true
+  }
+})

@@ -9,6 +9,7 @@ ts.setup({
     "python",
     "ninja",
     "rst",
+    "vimdoc"
   },
   highlight = {
     enable = true,
