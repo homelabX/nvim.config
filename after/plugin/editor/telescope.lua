@@ -15,7 +15,8 @@ telescope.setup({
     },
   },
 })
--- telescope.load_extension('fzf')
+
+telescope.load_extension('fzf')
 
 local set = vim.keymap.set
 local nmap = function(keys, func, desc)
