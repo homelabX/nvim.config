@@ -4,6 +4,8 @@ local keymap = vim.keymap -- for conciseness
 
 keymap.set("i", "<C-c>", "<ESC>", { desc = "Exit from insert mode" })
 
+keymap.set("n","<C-q>","<cmd>quit<CR>", { desc = "Exit" })
+
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "[N]o [H]ighlights (Clear search highlights)" })
 
 -- increment/decrement numbers
