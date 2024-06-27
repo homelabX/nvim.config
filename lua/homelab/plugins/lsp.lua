@@ -69,6 +69,9 @@ return {
     --     local hl = "DiagnosticSign" .. type
     --     vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
     --   end
+
+    lspconfig.pyright.setup {}
+    lspconfig.lua_ls.setup {}
     end,
   }
   
