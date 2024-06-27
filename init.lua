@@ -1,5 +1,2 @@
--- require("config.lazy")
--- require("config.settings")
--- require("config.keymaps")
-
 require("homelab.core")
+require("homelab.lazy")
