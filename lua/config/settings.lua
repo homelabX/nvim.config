@@ -1,4 +1,3 @@
-
 vim.wo.number = true
 vim.o.termguicolors = true
 
@@ -25,8 +24,7 @@ vim.cmd([[
 ]])
 
 if vim.lsp.inlay_hint then
-    vim.keymap.set('n', '<leader>uh', function()
-      vim.lsp.inlay_hint(0, nil)
-    end, { desc = 'Toggle Inlay Hints' })
-  end
-  
+  vim.keymap.set("n", "<leader>uh", function()
+    vim.lsp.inlay_hint(0, nil)
+  end, { desc = "Toggle Inlay Hints" })
+end
