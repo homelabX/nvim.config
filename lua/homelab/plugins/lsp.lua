@@ -70,6 +70,14 @@ return {
     --   end
 
     lspconfig.pyright.setup({})
-    lspconfig.lua_ls.setup({})
+    lspconfig.lua_ls.setup({
+        settings = {
+            Lua = {
+                diagnostics = {
+                    globals = { "vim" }
+                }
+            }
+        }
+    })
   end,
 }
