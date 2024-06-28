@@ -37,6 +37,6 @@ return {
     nmap("<leader>/", function()
       builtin.current_buffer_fuzzy_find(telescope_themes.get_dropdown({ winblend = 10, previewer = false }))
     end, "[/] Fuzzy search in current buffer")
-    nmap("<leader>gs", builtin.git_status, { desc = "[G]it [Status]" })
+    nmap("<leader>gs", builtin.git_status, "[G]it [Status]")
   end,
 }
