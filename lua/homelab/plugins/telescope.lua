@@ -17,15 +17,17 @@ return {
       pickers = {
         find_files = {
           find_command = { "rg", "--files", "--hidden", "-g", "!.git" },
+          theme = "dropdown",
         },
       },
     })
 
     telescope.load_extension("fzf")
+    --telescope.load_extension("git_worktree")
 
     local set = vim.keymap.set
     local nmap = function(keys, func, desc)
-      vim.keymap.set("n", keys, func, { desc = desc })
+      set("n", keys, func, { desc = desc })
     end
 
     nmap("<leader>ff", builtin.find_files, "[F]ind [F]iles")
@@ -35,5 +37,6 @@ return {
     nmap("<leader>/", function()
       builtin.current_buffer_fuzzy_find(telescope_themes.get_dropdown({ winblend = 10, previewer = false }))
     end, "[/] Fuzzy search in current buffer")
+    nmap("<leader>gs", builtin.git_status, { desc = "[G]it [Status]" })
   end,
 }
